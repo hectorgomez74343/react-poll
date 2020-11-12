@@ -21,12 +21,14 @@ class PollTotal extends React.Component {
                   text={selectionOneTotal.count.toString()}
                   image="/images/pizza.jpg"
                   pollSelection="selectionOne"
+                  onClickEventEnabled={false}
                 />
                 <Card
                   title="Burrito"
                   text={selectionTwoTotal.count.toString()}
                   image="/images/burrito.jpg"
                   pollSelection="selectionTwo"
+                  onClickEventEnabled={false}
                 />
               </div>
             </div>

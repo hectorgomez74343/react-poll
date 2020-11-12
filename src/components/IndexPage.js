@@ -17,12 +17,14 @@ class IndexPage extends React.Component {
                   text="Click to vote for pizza"
                   image="/images/pizza.jpg"
                   pollSelection="selectionOne"
+                  onClickEventEnabled={true}
                 />
                 <Card
                   title="Burrito"
                   text="Click to vote for burrito"
                   image="/images/burrito.jpg"
                   pollSelection="selectionTwo"
+                  onClickEventEnabled={true}
                 />
               </div>
             </div>

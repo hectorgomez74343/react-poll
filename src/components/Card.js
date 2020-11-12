@@ -19,9 +19,12 @@ class Card extends React.Component {
   };
 
   render() {
-    const { image, title, text } = this.props;
+    const { image, title, text, onClickEventEnabled } = this.props;
     return (
-      <div className="Card" onClick={this.routeToConfirmation}>
+      <div
+        className="Card"
+        onClick={onClickEventEnabled ? this.routeToConfirmation : null}
+      >
         <img src={image} alt={title} />
         <h3>{title}</h3>
         <h3>{text}</h3>
