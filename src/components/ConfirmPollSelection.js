@@ -27,14 +27,7 @@ class ConfirmPollSelection extends React.Component {
           </div>
         </div>
         <div className="row">
-          <div
-            className="col"
-            style={{
-              justifyContent: "center",
-              display: "flex",
-              marginBottom: "1rem",
-            }}
-          >
+          <div className="col button-flex-box">
             <button
               className="btn btn-danger"
               type="button"

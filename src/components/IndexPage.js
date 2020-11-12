@@ -3,6 +3,9 @@ import Card from "./Card";
 import { withRouter } from "react-router-dom";
 
 class IndexPage extends React.Component {
+  routeToPollTotal = () => {
+    this.props.history.push("/poll-total");
+  };
   render() {
     return (
       <div className="container">
@@ -11,6 +14,15 @@ class IndexPage extends React.Component {
             <div className="Cards">
               <h2>Food Poll</h2>
               <h2>Do you like burrito or pizza more?</h2>
+              <div className="col button-flex-box">
+                <button
+                  className="btn btn-danger"
+                  type="button"
+                  onClick={this.routeToPollTotal}
+                >
+                  Click to go to see poll count
+                </button>
+              </div>
               <div className="CardGroup">
                 <Card
                   title="Pizza"

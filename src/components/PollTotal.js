@@ -4,6 +4,9 @@ import { connect } from "react-redux";
 import Card from "./Card";
 
 class PollTotal extends React.Component {
+  routeToSelectionMenu = () => {
+    this.props.history.push("/");
+  };
   render() {
     const { selectionOneTotal, selectionTwoTotal } = this.props;
 
@@ -12,9 +15,18 @@ class PollTotal extends React.Component {
         <div className="row">
           <div className="col">
             <h2>Poll Total Count</h2>
+            <h2>Food Poll</h2>
+            <h2>Do you like burrito or pizza more?</h2>
+            <div className="col button-flex-box">
+              <button
+                className="btn btn-danger"
+                type="button"
+                onClick={this.routeToSelectionMenu}
+              >
+                Click to go back to selection menu
+              </button>
+            </div>
             <div className="Cards">
-              <h2>Food Poll</h2>
-              <h2>Do you like burrito or pizza more?</h2>
               <div className="CardGroup">
                 <Card
                   title="Pizza"

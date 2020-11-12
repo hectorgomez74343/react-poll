@@ -137,6 +137,12 @@ h2 {
   justify-items: center;
 }
 
+.button-flex-box {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 1060px) {
   .CardGroup {
     grid-template-columns: repeat(2, 1fr);
