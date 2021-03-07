@@ -8,3 +8,5 @@ npm start
 
 To build run
 npm run build
+
+Here is an example below of how the website looks https://zealous-cray-1320e9.netlify.app/#/
