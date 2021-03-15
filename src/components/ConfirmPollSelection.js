@@ -2,6 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { confirmPollSelection } from "../redux/actions/pollActions";
+import "./ConfirmPollSelection.css";
 
 class ConfirmPollSelection extends React.Component {
   routeToRoot = () => {
@@ -39,13 +40,9 @@ class ConfirmPollSelection extends React.Component {
         </div>
         <div className="row">
           <div className="col">
-            <div
-              className="Cards"
-              style={{ display: "flex", justifyContent: "center" }}
-            >
+            <div className="Cards cards-flex-box">
               <div
-                className="Card"
-                style={{ width: "400px", height: "400px" }}
+                className="Card card-dimensions"
                 onClick={this.confirmAppointment}
               >
                 <img src={image} alt={title} />

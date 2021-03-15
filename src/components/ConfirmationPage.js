@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import Success from "./success";
+import "./ConfirmationPage.css";
 
 class ConfirmationPage extends React.Component {
   routeToMainMenu = () => {
@@ -12,7 +13,7 @@ class ConfirmationPage extends React.Component {
         <div className="row">
           <div className="col">
             <h2>Your vote has been confirmed and saved!</h2>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div className="confirmation-page-flex-box">
               <button
                 className="btn btn-danger"
                 type="button"
